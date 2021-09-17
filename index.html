@@ -6,13 +6,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Full Stack Development in Automation Projects</title>
-    <meta content="A summary of the main programming skills used in the design, programming and implementation of the latest GreenmediaHD projects. Design, programming, and implementation of optimization algorithms for chiller plant to save energy, creating the GCOP Controller Application and the GreenmediaHD GCOP Cloud Website for the Cloud Analytic Dashboard. Design, programming, and implementation of the Rooftop Unit Smart Control Solution (RTU-SC) to save energy in the rooftop units of the Building HVAC System. "
-        name="descriptison">
-    <meta content="GCOP, GreenmediaHD, Reynaldo Manalich, optimization, programming skill, building automation" name="keywords">
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/icon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -363,6 +362,52 @@
             </div>
         </section>
 
+        <section id="webui" class="details">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>RTU-SC Project</h2>
+                    <p>Controller User Interface (UI)</p>
+                </div>
+                <div class="row content">
+                    <div class="col-md-6 order-1 order-md-2" data-aos="fade-left">
+                        <img src="assets/img/control_ui.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6 pt-5 order-2 order-md-1" data-aos="fade-up">
+                        <h3>UI Components</h3>
+                        <p class="font-italic">
+                            To help the contractor integrator to commission the application installation on the campus in an easier, more reliable way, and amazingly faster, a Web Server was embedded in the controller to be used as a User Interface (UI).
+                            </p>
+                        <p>
+                            Besides improving the commissioning process of the specific application, the added Web Server makes the controller more autonomous and reliable, it can work standalone without any BMS, and you can monitor the different variables and modify set-points using any smart device connected in the same controller local Ethernet network that has a browser (tablet, smartphone, laptop or any computer).</p>
+                        <p>
+                            This controller uses the Debian flavor of the Linux operating system. To program the Web Server, a light-weight Python Flask Framework was used to run simultaneous with the Contemporary Controls BASpiMEG automation logic software. The communication between both programs were possible using the BASpiMEG API's. 
+                        </p>
+                        <p>
+                         The production mode Server to run the Flask Framework was implemented using the WSGIServer of "gevent" package of Python. This server allows to use the same Python global variables for all the client instances connected simultaneously to the controller by using a web browser, what is very useful to keep historical trending and buffers in the controller RAM memory. A heavy use of threading programming was necessary for this real-time application.</p>
+                         <p>
+                         Bootstrap and jQuery were used to develop the front end of the application to make it responsive for the different devices browsing the UI.</p>
+                          <p>
+                         For more information consult <a href="https://www.ccontrols.com/success/greenmediacontroller.htm">Control Network Newsletter: GreenmediaHD Success Story</a> or visit the post in Linkedln: <a href="https://www.linkedin.com/pulse/how-get-most-out-contemporary-controls-controllers-build-manalich/"> 
+                         How to get the most out of Contemporary Controls general-purpose controllers to build high quality specific-purpose controllers</a>.
+                         </p>
+
+
+                        <p>The main developed components functions are:</p>
+                        <ul>
+                            <li><i class="icofont-check"></i>Setup the controller</li>
+                            <li><i class="icofont-check"></i> Groups all the parameters of the controlled RTU in different screens according to the functionality. In that way, we have the main operative parameters screen, set-point setup, schedule setup, trending charts, energy-saving parameters and so on. </li>
+                            <li><i class="icofont-check"></i> Integrate via API, Indoor Air Quality sensor.
+                            </li>
+                            <li><i class="icofont-check"></i>Send all collected data to the GreenmediaHD Cloud Server via API</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
         <section id="logger" class="details">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
@@ -645,13 +690,13 @@
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-inst">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/installation1.png" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/instalacion1.png" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Installation 1</h4>
                                 <p>GCOP App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/installation1.png" data-gall="portfolioGallery" class="venobox" title="GCOP App"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/instalacion1.png" data-gall="portfolioGallery" class="venobox" title="GCOP App"><i class="bx bx-plus"></i></a>
 
                             </div>
 
@@ -705,13 +750,13 @@
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-inst">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/installation2.png" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/instalacion2.png" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Installation 2</h4>
                                 <p>GCOP App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/installation2.png" data-gall="portfolioGallery" class="venobox" title="GCOP App"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/instalacion2.png" data-gall="portfolioGallery" class="venobox" title="GCOP App"><i class="bx bx-plus"></i></a>
 
                             </div>
 
@@ -765,13 +810,13 @@
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-inst">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/installation3.png" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/instalacion3.png" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Installation 3</h4>
                                 <p>Air Quality App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/installation3.png" data-gall="portfolioGallery" class="venobox" title="Air Quality App"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/instalacion3.png" data-gall="portfolioGallery" class="venobox" title="Air Quality App"><i class="bx bx-plus"></i></a>
 
                             </div>
 
@@ -825,13 +870,13 @@
 
                     <div class="col-lg-3 col-md-6 portfolio-item filter-inst">
                         <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/installation4.png" class="img-fluid" alt="">
+                            <img src="assets/img/portfolio/instalacion4.png" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Installation 4</h4>
                                 <p>Air Quality App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/installation4.png" data-gall="portfolioGallery" class="venobox" title="Air Quality App"><i class="bx bx-plus"></i></a>
+                                <a href="assets/img/portfolio/instalacion4.png" data-gall="portfolioGallery" class="venobox" title="Air Quality App"><i class="bx bx-plus"></i></a>
 
                             </div>
 
@@ -888,7 +933,10 @@
                         </div>
 
                     </div>
-
+<div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="reynaldo-manalich" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/reynaldo-manalich?trk=profile-badge">Reynaldo Manalich</a></div>
+</div>
+              
 
                 </div>
 
@@ -962,7 +1010,7 @@
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
 
-
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 
 
